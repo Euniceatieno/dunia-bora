@@ -49,7 +49,7 @@ font-family: 'Poppins', sans-serif;">
       </nav>
 
 <div id="about-div">
-<h1 style="text-align: center;padding: 10px;font-size: 30px;font-weight: bold;" >Our Products</h1>
+<h1 id="our-prod" >Our Products</h1>
 <div class="card-deck" id="card-deck">
        
         
@@ -75,7 +75,7 @@ font-family: 'Poppins', sans-serif;">
     </div>
 
 </div>
-<hr>
+<hr id="hr">
 
 <div  id="second-about-div">
 <h1 id="fwd-word">Forward Thinking Fashion</h1> 
@@ -105,7 +105,7 @@ font-family: 'Poppins', sans-serif;">
 </div>  
 
 </div>  
-<hr>
+<hr id="hr">
 
 <h1 id="team-word">The Team</h1>  
 <div id="main-team-div">
@@ -148,8 +148,10 @@ font-family: 'Poppins', sans-serif;">
     </div>
   </div>
 </div>
-
-
+<h1 id="cert-name"><br>Our Certifications</h1>
+<div id="cert">
+    <p id="food-word"></p>
+</div>
 
 <div id="contact-us">
     <div class="footer-basic" id="footer-basic">
@@ -158,7 +160,7 @@ font-family: 'Poppins', sans-serif;">
       <p id="phone">070000000000</p><br><br>
         <footer>
           
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="https://www.linkedin.com/company/dunia-bora/?originalSubdomain=ke"><i class="icon ion-social-linkedin"></i></a><a href="https://twitter.com/bora_dunia?lang=en"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <div class="social"><a href="https://www.instagram.com/dunia_bora/"><i class="icon ion-social-instagram"></i></a><a href="https://www.linkedin.com/company/dunia-bora/?originalSubdomain=ke"><i class="icon ion-social-linkedin"></i></a><a href="https://twitter.com/bora_dunia?lang=en"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
             
             <p class="copyright">Dunia Bora © 2023</p>
         </footer>
@@ -174,6 +176,23 @@ font-family: 'Poppins', sans-serif;">
 </div>
 
 <style>
+  #cert-name{
+    background-color: white;
+    margin-bottom: -1%;
+    text-align: center;
+    color: #1E443E;
+    font-weight: bold;
+  }
+   #cert{
+         background-image: url("static/certs.png"); 
+         background-repeat: no-repeat;
+         background-size: cover;
+         
+    } 
+    #food-word{
+      padding: 210px;
+      text-align: center;
+    } 
 
 #main-team-div{
     margin-left: 7%;
@@ -397,17 +416,42 @@ font-family: 'Poppins', sans-serif;">
   #team-div{
   display: flex;
 } 
+#our-prod{
+  text-align: center;padding: 10px;font-size: 40px;font-weight: bold;
+
+}
   
 
 /* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
 @media only screen and (max-width: 767px) {
+  #hr{
+  }
+  #titl{
+  font-weight: bold;
+  font-size: 20px;
+}
+  #our-prod{
+  text-align: center;padding: 10px;font-size: 20px;font-weight: bold;
+
+}
+  #cert-name{
+    background-color: white;
+    margin-bottom: -1%;
+    text-align: center;
+    color: #1E443E;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #food-word{
+      padding: 40px 0 40px 0;
+    } 
   #card-title{
     margin: 250% 0 0 2%;
     font-size: 10px;
 
 }
 #fwd-word{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 
 }
@@ -481,7 +525,7 @@ font-family: 'Poppins', sans-serif;">
   display: block;
 } 
 #team-word{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 #team-des{
@@ -507,7 +551,9 @@ font-family: 'Poppins', sans-serif;">
 #second-about-div{
   padding: 1px;
 }
-
+#con-text{
+  font-size: 20px;
+}
 
 
 }
