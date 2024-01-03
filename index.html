@@ -15,6 +15,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <title>Dunia Bora App</title>
+    <script>
+      function SubForm (){
+        $.ajax({
+          url:"https://api.apispreadsheets.com/data/818CilYv05pBiZvF/",
+          type:"post",
+          data:$("#myForm").serializeArray(),
+          success: function(){
+            alert("Information Submitted successfully :)")
+          },
+          error: function(){
+            alert("There was an error ,try again later :(")
+          }
+        });
+      }
+    </script>    
     
 </head>
 <body style="font-family: 'Oswald', sans-serif;
@@ -76,166 +91,237 @@ font-family: 'Poppins', sans-serif;">
 
 
   <h1 id="food-product-header">Food</h1>
-  <div class="card-deck" id="card-deck-shop-food">
+  <div  id="card-deck-shop-food">
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/combu.jpg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title" id="item">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title" id="item">Combucha</h5>
+        <p class="card-text">From dried cactus leaves</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted" id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>
       </div>
     </div>
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/combu.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title" id="item">Combucha</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text">From dried cactus leaves</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted" id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>    
+       </div>
+    </div>
+    <div class="card" id="card-shop">
+      <img class="card-img-top" src="static/combu.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title" id="item">Combucha</h5>
+        <p class="card-text">From dried cactus leaves</p>
+      </div>
+      <div class="card-footer">
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" href="https://www.instagram.com/dunia_bora/"><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>        
       </div>
     </div>
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/combu.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title" id="item">Combucha</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text">From dried cactus leaves</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted" id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" href="https://www.instagram.com/dunia_bora/"><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>  
       </div>
     </div>
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/combu.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title" id="item">Combucha</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text">From dried cactus leaves</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted"id="price">KSH 200</small>
-      </div>
-    </div>
-    <div class="card" id="card-shop">
-      <img class="card-img-top" src="static/combu.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title" id="item">Combucha</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted" id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" href="https://www.instagram.com/dunia_bora/"><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>
       </div>
     </div>
   </div>
 
 
   <h1 id="leather-product-header">Leather Products</h1>
-  <div class="card-deck" id="card-deck-shop-leather">
+  <div  id="card-deck-shop-leather">
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/LEATHER.jpeg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title" id="item">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title" id="item">Leather Belt</h5>
+        <p class="card-text">From dried cactus leaves</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted" id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>
       </div>
     </div>
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/LEATHER.jpeg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title" id="item">Combucha</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title" id="item">Leather Belt</h5>
+        <p class="card-text">From dried cactus leaves</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted" id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>
       </div>
     </div>
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/LEATHER.jpeg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title" id="item">Combucha</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <h5 class="card-title" id="item">Leather Belt</h5>
+        <p class="card-text">From dried cactus leaves</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted" id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>
       </div>
     </div>
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/LEATHER.jpeg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title" id="item">Combucha</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title" id="item">Leather Belt</h5>
+        <p class="card-text">From dried cactus leaves</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted"id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>
       </div>
     </div>
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/LEATHER.jpeg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title" id="item">Combucha</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <h5 class="card-title" id="item">Leather Belt</h5>
+        <p class="card-text">From dried cactus leaves</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted" id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>
       </div>
     </div>
   </div>
 
 
   <h1 id="silk-product-header">Silk Products</h1>
-  <div class="card-deck" id="card-deck-shop-silk">
+  <div id="card-deck-shop-silk">
     
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/silk.jpeg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title" id="item">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title" id="item">Silk Clother</h5>
+        <p class="card-text">From dried cactus leaves</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted" id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>
       </div>
     </div>
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/silk.jpeg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title" id="item">Combucha</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title" id="item">Silk Clother</h5>
+        <p class="card-text">From dried cactus leaves</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted" id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>
       </div>
     </div>
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/silk.jpeg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title" id="item">Combucha</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
+        <h5 class="card-title" id="item">Silk Clother</h5>
+        <p class="card-text">From dried cactus leaves</p>
+      </div>  
       <div class="card-footer">
-        <small class="text-muted" id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>
       </div>
     </div>
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/silk.jpeg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title" id="item">Combucha</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title" id="item">Silk Clother</h5>
+        <p class="card-text">From dried cactus leaves</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted"id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>
       </div>
     </div>
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/silk.jpeg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title" id="item">Combucha</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <h5 class="card-title" id="item">Silk Clother</h5>
+        <p class="card-text">From dried cactus leaves</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted" id="price">KSH 200</small>
+        <div style="display: flex;">
+          <p  id="price">KSH 20000</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" id="modal-header">
+          <h5 > Thank You for showing interest in our product !! </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modal-body">
+          Share your contact and our sales person will reach out in a few minutes !!!
+          <form id="myForm">
+            <input placeholder="Product name" name="ProductCode" />
+            <br/>
+            <input placeholder="Phone number" name="PhoneNumber" />
+            <br/>
+          </form>
+          <button onclick='SubForm()' id="form-button">Submit</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
@@ -269,8 +355,8 @@ font-size: 30px;
   }
 
 #home-img{
-width: 100%;
-height: 100%;
+width: 90%;
+height: 90%;
 }
 
 #home-word-div{
@@ -300,7 +386,7 @@ margin: 0 0 0% 10%;
   
   #read-more{
       padding: 15px;
-      background-color: #1E443E;
+      background-color: #2f534d;
       color: #F0F1E4;
       text-decoration: none;
       border-radius: 7px;
@@ -308,29 +394,38 @@ margin: 0 0 0% 10%;
       font-weight: bold;
 } 
 #card-deck-shop-food{
-  margin: 0 9% 5% 9%;
+  margin: 0 9% 1% 10%;
+  justify-content: space-between;
+  display: flex;
+  padding:0 0 20px 0;
  
 } 
 
 #card-deck-shop-silk{
-  margin: 0 9% 5% 9%;
+  margin: 0 9% 1% 10%;
+  justify-content: space-between;
+  display: flex;
+  padding:0 0 20px 0;
  
 } 
 
 #card-deck-shop-leather{
-  margin: 0 9% 5% 9%;
+  margin: 0 9% 1% 10%;
+  justify-content: space-between;
+  display: flex;
+  padding:0 0 20px 0;
  
 } 
 #card-shop{
   border-radius: 20px;
+  padding: 10px;
+  width: 80%;
+  margin-right: 20px;
 }
 #item{
   font-weight: bold;
 }
-#price{
-  font-weight: bold;
-  font-size: 20px;
-}
+
 #silk-product-header{
   background-color:#36120b ;
   margin: 0 10% 1% 10%;
@@ -382,6 +477,65 @@ margin: 0 0 0% 10%;
   color:#1E443E ;
   background-color: #f5d899;
 }
+#icon{
+  font-size: 30px;
+  color: #e15a1b;
+  
+
+}
+#price{
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 50%;
+  margin-top: 3%;
+  color: black;
+}
+#modal-body{
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #f0e8d8;
+}
+#modal-header{
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+#myForm{
+  padding: 5px;
+  font-size: 15px;
+  border-radius:25px ;
+}
+input{
+  margin-top: 3%;
+  padding: 10px;
+  border: 0px;
+  border-radius:10px ;
+
+}
+#form-button{
+  padding: 8px;
+  margin-top: 2%;
+  background-color: #1E443E;
+  color: #F0F1E4;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 15px;
+  border: 0px;
+  width: 30%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
@@ -394,6 +548,7 @@ width: 200%;
 #our-shop{
   font-size: 20px;
   color: #1E443E;
+  margin-top: -5%;
 }
 #logo{
   margin: 0 10% 0 3%;
@@ -420,12 +575,12 @@ margin-bottom: -2%;
 color: #1E443E;
 }
 #read-more{
-      padding: 10px;
-      background-color: #1E443E;
-      color: #F0F1E4;
-      text-decoration: none;
-      border-radius: 7px;
-      font-size: 10px;
+  padding: 10px;
+  background-color: #1E443E;
+  color: #F0F1E4;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 10px;
   }  
   #nav-text{
   color: #1E443E;
@@ -459,41 +614,86 @@ background-color: #ade9d0;
 
 }
 #category{
-  margin-left: 0;
-  margin-bottom:8% ;
+  margin-left: 7%;
+  margin-bottom:5% ;
   display: block;
-  text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
   
 } 
 #silk-product-header{
   background-color:#36120b;
+  background-color:#1d1f01 ;
   padding: 10px;
   color: #FFFFFF;
   font-size: 20px;
-  width: 80%;
+  width: 91%;
+  margin-left: 5%;
   
 }
 #leather-product-header{
   background-color:#4a3404 ;
+  background-color:#1d1f01 ;
   padding: 10px;
   color: #FFFFFF;
   font-size: 20px;
-  width: 80%;
+  width: 91%;
+  margin-left: 5%;
 }
 #food-product-header{
   background-color:#1d1f01 ;
   padding: 10px;
   color: #FFFFFF;
   font-size: 20px;
-  width: 80%;
+  width: 91%;
+  margin-left: 5%;
+}
+#card-deck-shop-food {
+    margin: 0 4% 5% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #card-deck-shop-leather {
+    margin: 0 4% 5% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #card-deck-shop-silk {
+    margin: 0 4% 5% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+#card-shop{
+  width: calc(50% - 4px);
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+}
+#item{
+  font-size: 15px;
+}
+
+#icon{
+  font-size: 20px;
+  color: #e15a1b;
+  
+
+}
+#price{
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: 3%;
+  color: black;
+  margin-right: 30%;
+  margin-top: 5%;
 }
 
 
-
-
-}
 /* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -516,13 +716,16 @@ font-size: 20px;
 }
 
 
-
+  }
 
 
   
 </style>
-  
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
   </body>
