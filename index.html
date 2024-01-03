@@ -91,6 +91,8 @@ font-family: 'Poppins', sans-serif;">
 
 
   <h1 id="food-product-header">Food</h1>
+  <hr id="header-hr">
+  <br>
   <div  id="card-deck-shop-food">
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/combu.jpg" alt="Card image cap">
@@ -161,6 +163,7 @@ font-family: 'Poppins', sans-serif;">
 
 
   <h1 id="leather-product-header">Leather Products</h1>
+  <hr id="header-hr">
   <div  id="card-deck-shop-leather">
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/LEATHER.jpeg" alt="Card image cap">
@@ -231,6 +234,7 @@ font-family: 'Poppins', sans-serif;">
 
 
   <h1 id="silk-product-header">Silk Products</h1>
+  <hr id="header-hr">
   <div id="card-deck-shop-silk">
     
     <div class="card" id="card-shop">
@@ -304,13 +308,13 @@ font-family: 'Poppins', sans-serif;">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header" id="modal-header">
-          <h5 > Thank You for showing interest in our product !! </h5>
+          <h5 > Thank You for showing interest in our product.</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body" id="modal-body">
-          Share your contact and our sales person will reach out in a few minutes !!!
+          Share your contact and our sales person will reach out in a few minutes.
           <form id="myForm">
             <input placeholder="Product name" name="ProductCode" />
             <br/>
@@ -427,35 +431,30 @@ margin: 0 0 0% 10%;
 }
 
 #silk-product-header{
-  background-color:#36120b ;
-  margin: 0 10% 1% 10%;
-  padding: 10px;
+  margin: 0 10% -0.5% 10%;
   font-size: 30px;
-  color: white;
+  font-weight: bold;
 
 }
 #leather-product-header{
-  background-color:#4a3404 ;
-  padding: 10px;
-  margin: 0 10% 1% 10%;
+  margin: 0 10% -0.5% 10%;
   font-size: 30px;
-  color: white;
+  font-weight: bold;
 }
 #food-product-header{
-  background-color:#011f18 ;
-  margin: 0 10% 1% 10%;
-  padding: 10px;
+  margin: 2% 10% -0.5% 10%;
   font-size: 30px;
-  color: white;
+  font-weight: bold;
 }
 #category{
   margin: 0 0 1% 10%;
   font-size: 20px;
+ 
   
 }
 
 #cat-food{
-  padding:10px;
+  padding:8px;
   border: 1px solid #55eed2;
   border-radius: 10px;
   color:#1E443E ;
@@ -463,14 +462,14 @@ margin: 0 0 0% 10%;
 }
 
 #cat-silk{
-  padding: 10px;
+  padding: 8px;
   border-radius: 10px;
   color:#1E443E ;
   background-color: #ebf28d;
 }
 
 #cat-leather{
-  padding: 10px;
+  padding: 8px;
   border-radius: 10px;
   margin: 0 1% 0 1%;
   border: 1px solid #f5d899;
@@ -524,6 +523,10 @@ input{
   border: 0px;
   width: 30%;
 
+}
+#header-hr{
+  width: 80%;
+  border: 1px solid #1d1f01;
 }
 
 
@@ -590,7 +593,6 @@ color: #1E443E;
   
   } 
 #cat-food{
-padding:8px;
 border: 1px solid #55eed2;
 border-radius: 10px;
 color:#1E443E ;
@@ -599,14 +601,12 @@ background-color: #ade9d0;
 
 }
 #cat-silk{
-  padding: 8px;
   border-radius: 10px;
   color:#1E443E ;
   background-color: #ebf28d;
   
 }
 #cat-leather{
-  padding: 8px;
   border-radius: 10px;
   border: 1px solid #f5d899;
   color:#1E443E ;
@@ -621,47 +621,34 @@ background-color: #ade9d0;
   font-weight: bold;
   
 } 
+
 #silk-product-header{
-  background-color:#36120b;
-  background-color:#1d1f01 ;
-  padding: 10px;
-  color: #FFFFFF;
+  margin: 0 10% -3% 7%;
   font-size: 20px;
-  width: 91%;
-  margin-left: 5%;
-  
+
 }
 #leather-product-header{
-  background-color:#4a3404 ;
-  background-color:#1d1f01 ;
-  padding: 10px;
-  color: #FFFFFF;
+  margin: 0 10% -3% 7%;
   font-size: 20px;
-  width: 91%;
-  margin-left: 5%;
 }
 #food-product-header{
-  background-color:#1d1f01 ;
-  padding: 10px;
-  color: #FFFFFF;
+  margin: 1% 10% -3% 7%;
   font-size: 20px;
-  width: 91%;
-  margin-left: 5%;
 }
 #card-deck-shop-food {
-    margin: 0 4% 5% 5%;
+    margin: -10% 4% 5% 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   #card-deck-shop-leather {
-    margin: 0 4% 5% 5%;
+    margin: -3% 4% 5% 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   #card-deck-shop-silk {
-    margin: 0 4% 5% 5%;
+    margin: -3% 4% 5% 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -692,6 +679,11 @@ background-color: #ade9d0;
   margin-right: 30%;
   margin-top: 5%;
 }
+#header-hr{
+  width: 87%;
+  border: 1px solid #393c05;
+}
+
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
