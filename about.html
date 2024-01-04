@@ -112,41 +112,30 @@ font-family: 'Poppins', sans-serif;">
  
 <div  id="team-div">
   
-  <div class="p-2" id="team-pic">
-    <img id="avatar" src="static/avatar.png" alt="avatar">
-  </div>
+  
   <div class="p-2" id="team-des">
+    <img id="avatar" src="static/avatar.png" alt="avatar">
     <h1 id="team-name"style="font-weight: bold;">Vincent Muhoro</h1>
     <h4 id="team-role"style="font-weight: bold">Founder & Executive Director</h4>
-    <p>I'm deeply connected to the challenges faced by my Laikipia community caused by climate change, especially drought impacting farming and livelihoods. I introduced cactus farming to offer a climate-resilient income source and lessen the fashion industry's environmental impact on all of us.</p>
   </div>
-  <div class="p-2" id="team-pic">
-    <img id="avatar" src="static/avatar.png" alt="avatar">
-  </div>
+ 
   <div class="p-2" id="team-des">
+    <img id="avatar" src="static/avatar.png" alt="avatar">
     <h1 id="team-name"style="font-weight: bold">Peter Chege</h1>
     <h4 id="team-role"style="font-weight: bold"> Public Relations & Education</h4>
-    <p>Our commitment to effective communication, outreach strategies, and impactful training programs like Bora Education and Heroes for Change, ensures the growth and prosperity of our community and environment</p>
-  </div></div>
+  </div>
+   
+  <div class="p-2" id="team-des">
+    <img id="avatar" src="static/avatar.png" alt="avatar">
+    <h1 id="team-name"style="font-weight: bold;">Eunice Atieno</h1>
+    <h4 id="team-role"style="font-weight: bold">Technology Lead</h4>
+  </div>
 
-
-  <div  id="team-div">
-    <div class="p-2" id="team-pic">
-      <img id="avatar" src="static/avatar.png" alt="avatar">
-    </div>
-    <div class="p-2" id="team-des">
-      <h1 id="team-name"style="font-weight: bold;">Eunice Atieno</h1>
-      <h4 id="team-role"style="font-weight: bold">Technology Lead</h4>
-      <p>I'm deeply connected to the challenges faced by my Laikipia community caused by climate change, especially drought impacting farming and livelihoods. I introduced cactus farming to offer a climate-resilient income source and lessen the fashion industry's environmental impact on all of us.</p>
-    </div>
-    <div class="p-2" id="team-pic">
-      <img id="avatar" src="static/avatar.png" alt="avatar">
-    </div>
-    <div class="p-2" id="team-des">
-      <h1 id="team-name"style="font-weight: bold">Science Guy</h1>
-      <h4 id="team-role"style="font-weight: bold"> Science Things</h4>
-      <p>Our commitment to effective communication, outreach strategies, and impactful training programs like Bora Education and Heroes for Change, ensures the growth and prosperity of our community and environment</p>
-    </div>
+  <div class="p-2" id="team-des">
+    <img id="avatar" src="static/avatar.png" alt="avatar">
+    <h1 id="team-name"style="font-weight: bold">Science Guy</h1>
+    <h4 id="team-role"style="font-weight: bold"> Science Things</h4>
+  </div>
   </div>
 </div>
 <h1 id="cert-name"><br>Our Certifications</h1>
@@ -374,26 +363,25 @@ margin-bottom: -1%;
     width: 100%;
     padding: 50px;
 }
-
-#team-div{
-  margin:2% 5% 2% 5% ;
-  padding: 20px;
-  border-radius: 40px;
-
-  
+#team-name{
+  font-size: 30px;
+  margin-top: 2%;
 }
+#team-role{
+  font-size: 20px;
+}
+
+
 #team-word{
   text-align: center;
   padding:20px 0 0 0;
   font-weight: bold;
   color:#1E443E;
 }
-#avatar{
-  padding: 20px;
-}
+
 #team-des{
-  margin-top: 2%;
   color: #1E443E;
+  width: 40%;
 }
 
 #con-text{
@@ -402,6 +390,7 @@ margin-bottom: -1%;
 #email{
   font-size: 20px;
   margin-right: 0.5%;
+  margin-left: 10%;
 }
 #phone{
   font-size: 20px;
@@ -430,13 +419,20 @@ margin-bottom: -1%;
       border-radius: 7px;
       font-size: 20px;
   } 
-  #team-div{
+#team-div{
   display: flex;
+  margin-left: 5%;
 } 
 #our-prod{
   text-align: center;padding: 10px;font-size: 40px;font-weight: bold;
 
 }
+
+
+
+
+
+
   
 
 /* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
@@ -548,30 +544,39 @@ margin-bottom: -1%;
     padding: 50px;
 } 
 #team-div{
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
 } 
 #team-word{
+  margin-top: -5%;
   font-size: 20px;
   font-weight: bold;
 }
 #team-des{
   font-size: 15px;
+  width: 50%;
 }
 #team-name{
+  padding-top: 2px;
   font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 #team-role{
   font-size: 15px;
+  text-align: center;
+
 }
 #team-pic{
-  width: 20%;
+  width: 100%;
   
 }
-
-#team-div{
-    margin-left: 4%;
-    margin-right: 4%;
-}   
+#avatar{
+  width: 90%;
+}
+  
 #chain1div{
   display: none;
 } 
