@@ -1,382 +1,433 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <title>Dunia Bora App</title>
-    <script>
-      function SubForm (){
-        $.ajax({
-          url:"https://api.apispreadsheets.com/data/818CilYv05pBiZvF/",
-          type:"post",
-          data:$("#myForm").serializeArray(),
-          success: function(){
-            alert("Information Submitted successfully :)")
-          },
-          error: function(){
-            alert("There was an error ,try again later :(")
-          }
-        });
-      }
-    </script>    
-    
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <title>Dunia Bora App</title>
+  <script>
+    function SubForm() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/818CilYv05pBiZvF/",
+        type: "post",
+        data: $("#myForm").serializeArray(),
+        success: function () {
+          alert("Information Submitted successfully :)")
+        },
+        error: function () {
+          alert("There was an error ,try again later :(")
+        }
+      });
+    }
+  </script>
+
 </head>
+
 <body style="font-family: 'Oswald', sans-serif;
 font-family: 'Poppins', sans-serif;">
 
-    <nav class="navbar navbar-expand-lg navbar-light" >        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            
-          <ul class="navbar-nav mr-auto">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" id="nav-text" href="index.html"><img src="static/logo 1080 x 1080.png" alt="Logo" width="5%"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="nav-text" href="index.html">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="nav-text"href="index.html#sustain-div">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="nav-text" href="index.html#blogs">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="nav-text" href="index.html#podcast">Podcast</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="nav-text" href="index.html#shop-div">Shop</a>
-            </li>
-            <li class="nav-item">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+
+      <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" id="nav-text" href="index.html"><img src="static/logo 1080 x 1080.png" alt="Logo"
+                width="5%"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-text" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-text" href="index.html#sustain-div">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-text" href="index.html#blogs">MediaHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-text" href="index.html#shop-div">Shop</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" id="nav-text" href="index.html#contact-us">Contact</a>
-            </li>
-            </ul>
-        
-         
-        </div>
-      </nav>         
+          </li>
+        </ul>
+
+
+    </div>
+  </nav>
   <div id="home-div">
-    
-  <div id="home-div-bg" >
-    <div id="home-word-div">
-      <br id="br1">
-      <br id="br2">
-      <br id="br3">
-      <p id="name">Dunia Bora</p>
-      <p id="pg-home">Sustainability : Our Mission</p><br>
-      <a id="read-more" href="index.html#blogs">Learn More ...</a>   
 
-</div>
-</div>
-<br>
+    <div id="home-div-bg">
+      <div id="home-word-div">
+        <br id="br1">
+        <br id="br2">
+        <br id="br3">
+        <p id="name">Dunia Bora</p>
+        <p id="pg-home">Sustainability : Our Mission</p><br>
+        <a id="read-more" href="index.html#blogs">Learn More ...</a>
 
-<div id="sustain-div">
-<!-- <div id="mission-img">
+      </div>
+    </div>
+    <br>
+
+    <div id="sustain-div">
+      <!-- <div id="mission-img">
     <h1 id="mission-word">Sustainability : Our Mission</h1>
 </div> -->
-<h1 id="fashion-text">Every year the Fashion Industry...</h1>
+      <h1 id="fashion-text">Every year the Fashion Industry...</h1>
 
-<div id="produce-div" >
-   <p id="tons">Produces <br> <span id="num">4-5 billion</span> <br> tons of <span  id="gas">CO2</p>
-   <p id="tons">Creates <br> <span id="num">92 million</span> <br> tons of <span  id="gas">waste</p>
-   <p id="tons">Uses <br> <span id="num">79 trillion</span><br> litres of <span  id="gas">water</p>
-   <p id="tons">Takes up <br> <span id="num">85.2 million</span> <br> HA of <span  id="gas">land</p>
-   
-</div>
+      <div id="produce-div">
+        <p id="tons">Produces <br> <span id="num">4-5 billion</span> <br> tons of <span id="gas">CO2</p>
+        <p id="tons">Creates <br> <span id="num">92 million</span> <br> tons of <span id="gas">waste</p>
+        <p id="tons">Uses <br> <span id="num">79 trillion</span><br> litres of <span id="gas">water</p>
+        <p id="tons">Takes up <br> <span id="num">85.2 million</span> <br> HA of <span id="gas">land</p>
 
-<div id="fashion-img">
-    <p id="fashion-word">Fast fashion has drastically changed the way that consumers view<br> fashion.<br><br>
-        Cheaper, plastic based, clothing is produced in surplus in order to keep up with the growing<br> demand for textiles. These plastic textiles do not decompose, and the surplus is<br>
-         either burned or sent to landfills in countries like Africa.</p>
-</div>
+      </div>
 
-<h1 id="fashion-text">Every Year Dunia Bora..</h1>
+      <div id="fashion-img">
+        <p id="fashion-word">Fast fashion has drastically changed the way that consumers view<br> fashion.<br><br>
+          Cheaper, plastic based, clothing is produced in surplus in order to keep up with the growing<br> demand for
+          textiles. These plastic textiles do not decompose, and the surplus is<br>
+          either burned or sent to landfills in continents like Africa.</p>
+      </div>
 
-<div id="dunia-div">
-    <p id="dunia-tons">Absorbs <br> <span id="num">14 million</span> <br> tons of <span  id="gas">CO2</p>
-    <p id="dunia-tons">Reduces waste <br> <span id="num">by 50%</span> <br> in  <span  id="gas">5 years</p>
-    <p id="dunia-tons">Uses <br> <span id="num">20% fewer</span><br> litres of <span  id="gas">water</p>
-    <p id="dunia-tons">Utilizes <br> <span id="num">Dry and Arid</span> <br>  <span  id="gas">African land</p>
- </div>
+      <h1 id="fashion-text">Every Year Dunia Bora..</h1>
 
-<div id="tannins-img">
-    <p id="food-word">We use natural tannins from avocado waste to create a zero waste system<br>
-         in our leather production.  Our products are 100% natural and biodegradable. <br><br>
+      <div id="dunia-div">
+        <p id="dunia-tons">Absorbs <br> <span id="num">14 million</span> <br> tons of <span id="gas">CO2</p>
+        <p id="dunia-tons">Reduces waste <br> <span id="num">by 50%</span> <br> in <span id="gas">5 years</p>
+        <p id="dunia-tons">Uses <br> <span id="num">20% fewer</span><br> litres of <span id="gas">water</p>
+        <p id="dunia-tons">Utilizes <br> <span id="num">Dry and Arid</span> <br> <span id="gas">African land</p>
+      </div>
 
-        The nopal cactus is able to thrive in arid climates with a water footprint<br>
-         of about 250 liters of water per year. The cacti also create a microhabitat that allows other<br>
+      <div id="tannins-img">
+        <p id="food-word">We use natural tannins from avocado waste to create a zero waste system<br>
+          in our leather production. Our products are 100% natural and biodegradable. <br><br>
+
+          The nopal cactus is able to thrive in arid climates with a water footprint<br>
+          of about 250 liters of water per year. The cacti also create a microhabitat that allows other<br>
           organisms to thrive, as well as creating a carbon sink. </p>
-</div>
+      </div>
 
 
-<div style="background-color: #effaf0;">
+      <div style="background-color: #effaf0;">
 
 
-<div class="p-2" id="why-nopal-div">
-  <div>
-  <img id="nop-pic" src="static/nopal.jpg" alt="avatar">
-  </div>
-  <div class="p-2" id="why-nopal-word-div" >
-    <h4 id="comm-des"style="font-weight: bold">Why the Nopal Cactus?</h4>
-    <p>The nopal cactus has high water efficiency and can grow in poor degraded soils<br>
-         where other plants fail to grow. This is perfect for sub-Saharan Africa's arid<br> climate that is  prone to droughts. <br>
+        <div class="p-2" id="why-nopal-div">
+          <div>
+            <img id="nop-pic" src="static/nopal.jpg" alt="avatar">
+          </div>
+          <div class="p-2" id="why-nopal-word-div">
+            <h4 id="comm-des" style="font-weight: bold">Why the Nopal Cactus?</h4>
+            <p>The nopal cactus has high water efficiency and can grow in poor degraded soils<br>
+              where other plants fail to grow. This is perfect for sub-Saharan Africa's arid<br> climate that is prone
+              to droughts. <br>
 
 
-        The cacti also create a microhabitat for other plants and animals to thrive in <br>
-        promoting biodiversity in the ecosystem, and absorb CO2 from the atmosphere acting as a carbon sink.<br> 
-        
-        Most importantly, these cacti produce food as a by-product which reduces food insecurity<br>
-         and provides economic growth for minority and indigenous communities in Africa. </p>
-  </div>
-</div>  
-<hr id="why-hr">
+              The cacti also create a microhabitat for other plants and animals to thrive in <br>
+              promoting biodiversity in the ecosystem, and absorb CO2 from the atmosphere acting as a carbon sink.<br>
 
-<div class="p-2" id="ovacado-div">
-    <div id="ove-1">
-        <img id="ova-pic" src="static/ova.webp" alt="avatar">
+              Most importantly, these cacti produce food as a by-product which reduces food insecurity<br>
+              and provides economic growth for minority and indigenous communities in Africa. </p>
+          </div>
+        </div>
+        <hr id="why-hr">
+
+        <div class="p-2" id="ovacado-div">
+          <div id="ove-1">
+            <img id="ova-pic" src="static/ova.webp" alt="avatar">
+          </div>
+
+          <div class="p-2" id="ova-word-div">
+            <h4 id="comm-des" style="font-weight: bold">Avocado as a tanning agent</h4>
+            <p>Traditional tanning agents such as azo dyes, nickel, PCP, and chrome IV pose <br>
+              major health risks to textile workers and the environment. <br>
+
+              We use avocado waste as a natural tanning agent in our production process which <br> is both sustainable
+              and environmentally friendly. <br>
+
+              Avocado waste is a byproduct of the avocado industry, which is prevalent in Kenya,<br>
+              and by using this waste, we are reducing the amount of waste that ends up<br> in landfills and contributes
+              to environmental degradation.</p>
+          </div>
+          <div id="ove-2">
+            <img id="ova-pic" src="static/ova.webp" alt="avatar">
+          </div>
+        </div>
+        <hr id="why-hr">
+
+        <div class="p-2" id="community-div">
+          <div>
+            <img id="com-pic" src="static/community.webp" alt="avatar">
+          </div>
+          <div class="p-2" id="com-word-div">
+            <h4 id="comm-des" style="font-weight: bold">Growing as a community</h4>
+            <p>Our commitment to the minority and indigenous peoples of Africa <br> extends beyond simply providing them
+              with economic opportunities.<br> <br>
+              We are dedicated to educating them about the impact of their<br> actions on the environment and the global
+              community.<br>
+
+              Beyond leather production, we further contribute to sustainability by <br> transforming waste products
+              into fodder and flour for both animal and human consumption,<br>
+              ensuring a holistic and responsible approach to resource utilization. <br> <br>
+
+              By creating a sustainable business model that supports local communities<br> and reduces our carbon
+              footprint, we can help pave the way towards a more sustainable future for all.</p>
+          </div>
+        </div>
+
+
+      </div>
+      <div style="background-color: #1E443E;">
+        <h1 style="padding: 20px;"></h1>
+      </div>
     </div>
-   
-    <div class="p-2" id="ova-word-div" >
-      <h4 id="comm-des"style="font-weight: bold">Avocado as a tanning agent</h4>
-      <p>Traditional tanning agents such as azo dyes, nickel, PCP, and chrome IV pose <br>
-         major health risks to textile workers and the environment. <br> 
+    <style>
+      #mission-img {
+        background-image: url("static/cact.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
 
-        We use avocado waste as a natural tanning agent in our production process which <br>  is both sustainable and environmentally friendly. <br> 
-        
-        Avocado waste is a byproduct of the avocado industry, which is prevalent in Kenya,<br> 
-         and by using this waste, we are reducing the amount of waste that ends up<br>  in landfills and contributes to environmental degradation.</p>
-    </div>
-    <div id="ove-2">
-        <img id="ova-pic" src="static/ova.webp" alt="avatar">
-    </div>
-</div>
-<hr id="why-hr">
+      }
 
-<div class="p-2" id="community-div">
-    <div>
-    <img id="com-pic" src="static/community.webp" alt="avatar">
-    </div>
-    <div class="p-2" id="com-word-div" >
-      <h4 id="comm-des"style="font-weight: bold">Growing as a community</h4>
-      <p>Our commitment to the minority and indigenous peoples of Africa <br> extends beyond simply providing them with economic opportunities.<br> <br> 
-           We are dedicated to educating them about the impact of their<br>  actions on the environment and the global community.<br> 
-  
-          Beyond leather production, we further contribute to sustainability by <br> transforming waste products into fodder and flour for both animal and human consumption,<br> 
-           ensuring a holistic and responsible approach to resource utilization. <br> <br> 
-          
-          By creating a sustainable business model that supports local communities<br>  and reduces our carbon footprint, we can help pave the way towards a more sustainable future for all.</p>
-    </div>
-</div>
-
-  
-</div>
-<div style="background-color: #1E443E;">
-    <h1 style="padding: 20px;"></h1>
-</div>
-</div>
-<style>
-    #mission-img{
-         background-image: url("static/cact.jpeg"); 
-         background-repeat: no-repeat;
-         background-size: cover;
-         
-    }
-    #mission-word{
+      #mission-word {
         text-align: center;
         padding: 80px;
         font-size: 70px;
         color: white;
         font-weight: bold;
-        
-    }
-    #produce-div{
+
+      }
+
+      #produce-div {
         width: 70%;
         justify-content: space-between;
         margin: 0 auto;
         padding: 40px;
         display: flex;
-        
-    }
-    #dunia-div{
+
+      }
+
+      #dunia-div {
         width: 70%;
         justify-content: space-between;
         margin: 0 auto;
         padding: 40px;
         display: flex;
-        
-    }
-   
-    #tons{
+
+      }
+
+      #tons {
         border: 5px solid #27AAE2;
         border-radius: 20%;
-        padding: 50px;    
-        font-size: 17px; 
+        padding: 50px;
+        font-size: 17px;
         text-align: center;
         color: rgb(54, 53, 53);
         outline: 5px solid #56B54B;
-        
-    }
-    #dunia-tons{
+
+      }
+
+      #dunia-tons {
         border: 5px solid #56B54B;
         border-radius: 20%;
-        padding: 50px;    
-        font-size: 17px; 
+        padding: 50px;
+        font-size: 17px;
         text-align: center;
         color: rgb(170, 75, 75);
         outline: 5px solid #27AAE2;
-        
-    }
-    
-   
- 
-    #fashion-text{
+
+      }
+
+
+
+      #fashion-text {
         text-align: center;
         color: #1E443E;
         padding: 10px;
         font-weight: bold;
-    }
-    #fashion-img{
-        background-image: url("static/fashion.jpeg"); 
-         background-repeat: no-repeat;
-         background-size: cover;
+      }
 
-    }
-    #fashion-word{
+      #fashion-img {
+        background-image: url("static/fashion.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+
+      #fashion-word {
         padding: 70px;
         color: white;
         text-align: center;
         font-size: 25px;
-        background:rgba(0, 0, 0, 0.7);
-    }
-    #food-word{
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      #food-word {
         padding: 70px;
         color: white;
         text-align: center;
         font-size: 25px;
-        background:rgba(0, 0, 0, 0.7);
-    }
-    #gas{
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      #gas {
         color: purple;
         font-weight: bold;
-    }
-    #num{
+      }
+
+      #num {
         font-weight: bold;
         color: rgb(14, 108, 145);
-    }
-    #tannins-img{
-         background-image: url("static/food.jpeg"); 
-         background-repeat: no-repeat;
-         background-size: cover;
-         opacity: 0.9;
-         
-    }
+      }
 
-    #nav-text{
-    color: #1E443E;
-    padding:30px 100px 25px 30px;
-    font-size: 20px;
-    font-weight: bold;
-    
-    }
-    #nav-text:hover {
-    color: #92278F;
-    }
-    #logo{
-    margin: 0 5% 0 10%;
-    width: 15%;
+      #tannins-img {
+        background-image: url("static/food.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9;
 
-    }
-    
-    #read-more{
+      }
+
+      #nav-text {
+        color: #1E443E;
+        padding: 30px 100px 25px 30px;
+        font-size: 20px;
+        font-weight: bold;
+
+      }
+
+      #nav-text:hover {
+        color: #92278F;
+      }
+
+      #logo {
+        margin: 0 5% 0 10%;
+        width: 15%;
+
+      }
+
+      #read-more {
         padding: 30px;
         background-color: #49aa4f;
-            color: #F0F1E4;
-            text-decoration: none;
-            border-radius: 7px;
-            font-size: 30px;
-    }  
-    #community-div{
+        color: #F0F1E4;
+        text-decoration: none;
+        border-radius: 7px;
+        font-size: 30px;
+      }
+
+      #community-div {
         display: flex;
         width: 80%;
         margin: 1% 7% 0 10%;
         font-size: 20px;
-        
-    }
-    #ovacado-div{
+
+      }
+
+      #ovacado-div {
         display: flex;
         width: 80%;
         margin: 1% 7% 0 10%;
         font-size: 20px;
         padding: 40px;
-        
-        
-    }
-    #why-nopal-div{
+
+
+      }
+
+      #why-nopal-div {
         display: flex;
         width: 80%;
         margin: 1% 7% 0 10%;
         font-size: 20px;
-        
-    }
-    #com-pic{
+
+      }
+      #why-nopal-media-div {
+        display: flex;
+        width: 80%;
+        margin: 1% 0% 0 5%;
+        font-size: 20px;
+
+      }
+  
+      #com-pic {
         width: 70%;
         border-radius: 5px;
 
-        
-    }
-    #ova-pic{
+
+      }
+
+      #ova-pic {
         width: 70%;
         border-radius: 5px;
         margin-left: 15%;
 
-        
-    }
-    #nop-pic{
+
+      }
+
+      #nop-pic {
         width: 70%;
         border-radius: 5px;
-        
-    }
-    #why-nopal-word-div{
-        margin-left: -10%;
-        
-    }
-    #oval-word-div{
+
+      }
+      #nop-media-pic {
+        width: 50%;
+        border-radius: 5px;
+        margin-left: 10%;
+
+      }
+
+      #why-nopal-word-div {
+        margin-left: -20%;
+
+      }
+      #why-nopal-word-media-div {
+        margin-left: -30%;
+
+      }
+
+      #oval-word-div {
         margin-right: 10%;
-        
-    }
-    #com-word-div{
+
+      }
+
+      #com-word-div {
         margin-left: -10%;
-        
-    }
-    #why-hr{
+
+      }
+
+      #why-hr {
         width: 95%;
         border: 1px solid rgb(182, 179, 179);
-    }
-    #comm-des{
+      }
+
+      #comm-des {
         font-size: 30px;
-    }
-    #ove-1{
+      }
+
+      #ove-1 {
         display: none;
-    }
-    
-
-   
+      }
 
 
 
@@ -386,369 +437,527 @@ font-family: 'Poppins', sans-serif;">
 
 
 
-/* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
-@media only screen and (max-width: 767px) {
-    #logo{
-  margin: 0 10% 0 3%;
-  width: 25%;
-  }
-    #nav-text{
-  color: #1E443E;
-  padding:15px 50px 17px 15px;
-  font-size: 15px;
-  font-weight: bold;
-  
-  }  
-    #mission-img{
-         background-image: url("static/cact.jpeg"); 
-         
-    }
-    #mission-word{
-        padding: 60px;
-        font-size: 25px;  
-    }
-    #fashion-text{
-        font-size: 20px;
-
-    }
-    #produce-div{
-        display: block;
-    }
-    #dunia-div{
-        display: block;
-       
-    }
-    #tons{
-        border: 3px solid #27AAE2;
-        border-radius: 20%;
-        padding: 30px;    
-        font-size: 15px; 
-        text-align: center;
-        color: rgb(54, 53, 53);
-        outline: 3px solid #56B54B;
-        
-    }
-    #dunia-tons{
-        border: 3px solid #56B54B;
-        border-radius: 20%;
-        padding: 30px;    
-        font-size: 15px; 
-        text-align: center;
-        color: rgb(170, 75, 75);
-        outline:3px solid #27AAE2;
-        
-    }
-    #fashion-word{
-        font-size: 15px;
-        font-weight: bold;
-
-    }
-    #food-word{
-        font-size: 15px;
-        font-weight: bold;
-    }
-   
-    #community-div{
-        display: block;
-        width: 80%;
-        font-size:15px;
-        
-    }
-    #ovacado-div{
-        display: block;
-        width: 80%;
-        font-size: 15px;
-        
-        
-    }
-    #why-nopal-div{
-        display: block;
-        width: 80%;
-        font-size: 15px;
-        
-    }
-    #com-pic{
-        width: 120%;
-        border-radius: 5px;
-        margin-left: -9%;
-
-        
-    }
-   
-    #ova-pic{
-        width: 120%;
-        border-radius: 5px;
-        margin-left: -9%;
-
-        
-    }
-    #nop-pic{
-        width: 120%;
-        border-radius: 5px;
-        margin-left: -9%;
-        
-    }
-   
-    #why-hr{
-        width: 95%;
-        border: 1px solid rgb(182, 179, 179);
-    }
-    #comm-des{
-        font-size: 30px;
-    }
-    #ove-2{
-        display: none;
-    }
-    #ove-1{
-        display: block;
-    }
-  
-
-}
-/* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    #mission-img{
-         background-image: url("static/cact.jpeg"); 
-         
-    }
-
-
-}
 
 
 
+      /* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+      @media only screen and (max-width: 767px) {
+        #logo {
+          margin: 0 10% 0 3%;
+          width: 25%;
+        }
 
-</style>
+        #nav-text {
+          color: #1E443E;
+          padding: 15px 50px 17px 15px;
+          font-size: 15px;
+          font-weight: bold;
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+        }
+
+        #mission-img {
+          background-image: url("static/cact.jpeg");
+
+        }
+
+        #mission-word {
+          padding: 60px;
+          font-size: 25px;
+        }
+
+        #fashion-text {
+          font-size: 20px;
+
+        }
+
+        #produce-div {
+          display: block;
+        }
+
+        #dunia-div {
+          display: block;
+
+        }
+
+        #tons {
+          border: 3px solid #27AAE2;
+          border-radius: 20%;
+          padding: 30px;
+          font-size: 15px;
+          text-align: center;
+          color: rgb(54, 53, 53);
+          outline: 3px solid #56B54B;
+
+        }
+
+        #dunia-tons {
+          border: 3px solid #56B54B;
+          border-radius: 20%;
+          padding: 30px;
+          font-size: 15px;
+          text-align: center;
+          color: rgb(170, 75, 75);
+          outline: 3px solid #27AAE2;
+
+        }
+
+        #fashion-word {
+          font-size: 15px;
+          font-weight: bold;
+
+        }
+
+        #food-word {
+          font-size: 15px;
+          font-weight: bold;
+        }
+
+        #community-div {
+          display: block;
+          width: 80%;
+          font-size: 15px;
+
+        }
+
+        #ovacado-div {
+          display: block;
+          width: 80%;
+          font-size: 15px;
+
+
+        }
+
+        #why-nopal-div {
+          display: block;
+          width: 80%;
+          font-size: 15px;
+
+        }
+        #why-nopal-media-div {
+          display: block;
+          width: 80%;
+          font-size: 15px;
+          margin-left: 10%;
+
+        }
+        #why-nopal-word-media-div {
+          margin-left: -5%;
+
+        }
+
+        #com-pic {
+          width: 120%;
+          border-radius: 5px;
+          margin-left: -9%;
+
+
+        }
+
+        #ova-pic {
+          width: 120%;
+          border-radius: 5px;
+          margin-left: -9%;
+
+
+        }
+
+        #nop-pic {
+          width: 120%;
+          border-radius: 5px;
+          margin-left: -9%;
+
+        }
+        #nop-media-pic {
+          width: 120%;
+          border-radius: 5px;
+          margin-left: -9%;
+
+        }
+
+        #why-hr {
+          width: 95%;
+          border: 1px solid rgb(182, 179, 179);
+        }
+
+        #comm-des {
+          font-size: 30px;
+        }
+
+        #ove-2 {
+          display: none;
+        }
+
+        #ove-1 {
+          display: block;
+        }
+
+
+      }
+
+      /* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        #mission-img {
+          background-image: url("static/cact.jpeg");
+
+        }
+
+
+      }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
 
 
 <!-- ABOUT US -->
 <div id="about-div">
-<h1 id="our-prod" >Our Products</h1>
-<div class="card-deck" id="card-deck">
-       
-        
+  <h1 id="our-prod">Our Products</h1>
+  <div class="card-deck" id="card-deck">
+
+
     <div class="card" id="card1">
       <div class="card-body" id="card-body">
         <h1 class="card-title" id="titl">Leather</h1>
-        <p class="card-text">Our luxury cactus leather is 100% biodegradable, soft, durable, and more affordable than traditional leather. .</p>
+        <p class="card-text">Our luxury cactus leather is 100% biodegradable, soft, durable, and more affordable than
+          traditional leather. .</p>
       </div>
     </div>
-    
+
     <div class="card" id="card2">
       <div class="card-body" id="card-body">
         <h1 class="card-title" id="titl">Silk</h1>
-        <p class="card-text">Tour hand spun aloe vera silk is stylish and supports indigenous communities in sub-Saharan Africa.</p>
+        <p class="card-text">Tour hand spun aloe vera silk is stylish and supports indigenous communities in sub-Saharan
+          Africa.</p>
       </div>
     </div>
 
     <div class="card" id="card3">
       <div class="card-body" id="card-body">
         <h1 class="card-title" id="titl">Food</h1>
-        <p class="card-text">The nutritious foods like flour, jam, wine, fruit, and juice can all be made from the cactus plant .</p>
+        <p class="card-text">The nutritious foods like flour, jam, wine, fruit, and juice can all be made from the
+          cactus plant .</p>
       </div>
     </div>
 
-</div>
-<hr id="hr" style="border: 1px solid rgb(193, 190, 190);">
+  </div>
+  <hr id="hr" style="border: 1px solid rgb(193, 190, 190);">
 
-<div  id="second-about-div">
-<h1 id="fwd-word">Forward Thinking Fashion</h1> 
-<p id="fwd-pg">Our mission is to create a sustainable future through our innovative approach to food and fashion.</p>
+  <div id="second-about-div">
+    <h1 id="fwd-word">Forward Thinking Fashion</h1>
+    <p id="fwd-pg">Our mission is to create a sustainable future through our innovative approach to food and fashion.
+    </p>
 
-<div id="chain1div">
-    <div>
+    <div id="chain1div">
+      <div>
         <p>Cactus leaves are harvested and then dried in the sun for 3 days</p>
-        
-    </div>
-    <img id="arrow" src="static/arrow.png" alt="raw-cactus">
-    <div>
-        <p>The dried leaves are soaked in water then ground up into a powder, mixed with an adhesive, and pressed into a sheet</p>
-    </div>
-    <img id="arrow" src="static/arrow.png" alt="raw-cactus">
-    <div>
+
+      </div>
+      <img id="arrow" src="static/arrow.png" alt="raw-cactus">
+      <div>
+        <p>The dried leaves are soaked in water then ground up into a powder, mixed with an adhesive, and pressed into a
+          sheet</p>
+      </div>
+      <img id="arrow" src="static/arrow.png" alt="raw-cactus">
+      <div>
         <p>The sheet of cactus leather is then dyed using avocado tannins</p>
-    </div>
-    <img id="arrow" src="static/arrow.png" alt="raw-cactus">
-    <div>
+      </div>
+      <img id="arrow" src="static/arrow.png" alt="raw-cactus">
+      <div>
         <p>The final product is durable, soft, breathable, and stylish</p>
-    </div>
-    <img id="arrow" src="static/arrow.png" alt="raw-cactus">
-    <div>
+      </div>
+      <img id="arrow" src="static/arrow.png" alt="raw-cactus">
+      <div>
         <p>The leather is 100% biodegradable, and becomes compost which can be used to grow more cacti. </p>
+      </div>
     </div>
-</div>  
 
-</div>  
+  </div>
 
 
-<hr id="hr" style="border: 1px solid rgb(193, 190, 190);" >
-<div id="blogs">
+  <hr id="hr" style="border: 1px solid rgb(193, 190, 190);">
+  <div id="blogs">
 
-<h1 id="team-word">Blogs</h1>
-<!-- <div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="..." class="img-fluid rounded-start" alt="...">
+    <h1 id="team-word">Media Hub</h1>
+    <div style="background-color: white;">
+    <div class="p-2" id="why-nopal-media-div" >
+      <div>
+        <img id="nop-media-pic"  src="static/image.png" alt="avatar">
+      </div>
+      <div class="p-2" id="why-nopal-word-media-div">
+        <h4 id="comm-des" style="font-weight: bold">Using cacti as a basis for creating nature-positive nutrition</h4>
+        <p>Have you ever thought about using cacti as a basis for creating nature-positive nutrition?<br>
+
+          In today’s episode of the Circular Economy Show Podcast, we meet Vincent Muhoro,<br>
+          Founder of Dunia Bora, a social enterprise in Kenya that aims to combat climate <br>
+          change and support local farmers by creating innovative products out of the cactus plant......<br><br>
+          <a href="https://www.linkedin.com/posts/ellen-macarthur-foundation_have-you-ever-thought-about-using-cacti-as-activity-7203697012616130560-Fq30?utm_source=share&utm_medium=member_android"
+            style="color: white; border: 2px solid; border-radius: 10px;padding: 10px;text-decoration: none;background-color: #1E443E;">Learn
+            More</a>
+        </p>
+      </div>
     </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+    <div class="p-2" id="why-nopal-media-div">
+      <div>
+        <img id="nop-media-pic" src="static/media_2.png" alt="avatar">
+      </div>
+      <div class="p-2" id="why-nopal-word-media-div">
+        <h4 id="comm-des" style="font-weight: bold">Villars Intensive Program on Ecopreneurship</h4>
+        <p>uilding upon Villars Institute’s strengths in sustainability, systems thinking and<br> 
+          entrepreneurship, the Villars Intensive Program on Ecopreneurship (VIP-e), takes young <br>
+          aspiring sustainability and regenerative entrepreneurs (or “ecopreneurs”) on a journey from<br>
+           inspiration to acting on their entrepreneurial ambitions.
+          <br><br><a href="https://villarsinstitute.org/villars-intensive-program-on-ecopreneurship"
+            style="color: white; border: 2px solid; border-radius: 10px;padding: 10px;text-decoration: none;background-color: #1E443E;">Learn
+            More</a> </p>
+      </div>
+    </div>
+    <div style="background-color: white;">
+    <div class="p-2" id="why-nopal-media-div">
+      <div>
+        <img id="nop-media-pic" src="static/image.png" alt="avatar">
+      </div>
+      <div class="p-2" id="why-nopal-word-media-div">
+        <h4 id="comm-des" style="font-weight: bold">Transforming cacti into nutritious juice and cookies</h4>
+        <p>TAs the Founder of Dunia Bora, a pioneering social enterprise in Kenya, Vincent shares <br>
+          with us how they transform cacti into nutritious juice and cookies. Tune in to learn how <br>
+          Dunia Bora is helping to tackle the devastating effects of climate change, while creating <br>
+          resilience and economic opportunities for the local communities......<br><br>
+          <a href="https://www.linkedin.com/posts/ellen-macarthur-foundation_do-you-want-to-hear-more-about-vincent-muhoro-activity-7204814592013651968-VGKP/?utm_source=share&utm_medium=member_android"
+            style="color: white; border: 2px solid; border-radius: 10px;padding: 10px;text-decoration: none;background-color: #1E443E;">Learn
+            More</a>
+        </p>
+      </div>
+    </div>
+    </div>
+    <div class="p-2" id="why-nopal-media-div">
+      <div>
+        <img id="nop-media-pic" src="static/media_4.png" alt="avatar">
+      </div>
+      <div class="p-2" id="why-nopal-word-media-div">
+        <h4 id="comm-des" style="font-weight: bold">Turning the invasive cactus into leather</h4>
+        <p>Growing up, Vincent Muhoro,23, remembers the presence of it in his home. Come shine<br>
+          come rain, the prickly bear fruit did not dry out. When the grazing fields were patch<br>
+          dry and drought ravished the region, the cactus didn’t budge.<br><br>
+          <a href="https://nation.africa/kenya/health/turning-the-invasive-cactus-into-leather-4425946"
+            style="color: white; border: 2px solid; border-radius: 10px;padding: 10px;text-decoration: none;background-color: #1E443E;">Learn
+            More</a>
+        </p>
+      </div>
+    </div>
+    <div style="background-color: white;">
+    <div class="p-2" id="why-nopal-media-div">
+      <div>
+        <img id="nop-media-pic" src="static/media_5.png" alt="avatar">
+      </div>
+      <div class="p-2" id="why-nopal-word-media-div">
+        <h4 id="comm-des" style="font-weight: bold">Dunia Bora: Pioneering Sustainable Fashion with Cactus Leather</h4>
+        <p>The traditional leather industry is a major contributor to environmental degradation, with the production<br>
+           of leather generating up to 370,000 tons of hazardous waste per year, polluting water sources and affecting<br>
+            the health of communities around the world. In addition, the fashion industry is responsible for 20% of global<br>
+             waste water and 10% of global carbon emissions, making it a significant contributor to climate change..... <br>
+            <br><br>
+          <a href="https://www.changemakers.com/en/take-action/projects/dunia-bora"
+            style="color: white; border: 2px solid; border-radius: 10px;padding: 10px;text-decoration: none;background-color: #1E443E;">Learn
+            More</a>
+        </p>
+      </div>
+    </div>
+    </div>
+    <div class="p-2" id="why-nopal-media-div">
+      <div>
+        <img id="nop-media-pic" src="static/media_6.png" alt="avatar">
+      </div>
+      <div class="p-2" id="why-nopal-word-media-div">
+        <h4 id="comm-des" style="font-weight: bold">Giving back to the land — one food and drink product at a time</h4>
+        <p>Manufacturers and retailers have the keys to unlocking a food system that regenerates rather than degrades<br> 
+          nature, via circular design. The Big Food Redesign Challenge shows them how.<br><br>
+          <a href="https://trellis.net/article/giving-back-land-one-food-and-drink-product-time/"
+            style="color: white; border: 2px solid; border-radius: 10px;padding: 10px;text-decoration: none;background-color: #1E443E;">Learn
+            More</a>
+        </p>
+      </div>
+    </div>
+    <div style="background-color: white;">
+    <div class="p-2" id="why-nopal-media-div">
+      <div>
+        <img id="nop-media-pic" src="static/media_7.png" alt="avatar">
+      </div>
+      <div class="p-2" id="why-nopal-word-media-div">
+        <h4 id="comm-des" style="font-weight: bold">Circular, Regenerative Innovations Advance in Big Food Redesign Challenge</h4>
+        <p>Cactus cookies, banana-peel snacks, wrinkled-pea pasta are contenders in the <br>
+           Ellen MacArthur Foundation’s Challenge for companies to design new products — <br> 
+           or redesign existing ones — using circular principles that help address climate change <br> 
+           and regenerate nature.......<br><br>
+          <a href="https://sustainablebrands.com/read/product-service-design-innovation/circular-regenerative-big-food-redesign-challenge"
+            style="color: white; border: 2px solid; border-radius: 10px;padding: 10px;text-decoration: none;background-color: #1E443E;">Learn
+            More</a>
+        </p>
       </div>
     </div>
   </div>
-</div> -->
 
-</div>
-<hr id="hr" style="border: 1px solid rgb(193, 190, 190);" >
-
-
-<h1 id="team-word">The Team</h1>  
-<div id="main-team-div">
- 
-<div  id="team-div">
-  
-  
-  <div class="p-2" id="team-des">
-    <img id="avatar" src="static/DSC_2150-Edit.jpg" alt="avatar">
-    <h1 id="team-name"style="font-weight: bold;">Vincent Muhoro</h1>
-    <h4 id="team-role"style="font-weight: bold">Founder & Executive Director</h4>
   </div>
- 
-  <div class="p-2" id="team-des">
-    <img id="avatar" src="static/DSC_2164.jpg" alt="avatar" >
-    <h1 id="team-name"style="font-weight: bold">Peter Chege</h1>
-    <h4 id="team-role"style="font-weight: bold"> Public Relations & Education</h4>
-  </div>
-   
-  <!-- <div class="p-2" id="team-des">
+  <hr id="hr" style="border: 1px solid rgb(193, 190, 190);">
+
+
+  <h1 id="team-word">The Team</h1>
+  <div id="main-team-div">
+
+    <div id="team-div">
+
+
+      <div class="p-2" id="team-des">
+        <img id="avatar" src="static/DSC_2150-Edit.jpg" alt="avatar">
+        <h1 id="team-name" style="font-weight: bold;">Vincent Muhoro</h1>
+        <h4 id="team-role" style="font-weight: bold">Founder & Executive Director</h4>
+      </div>
+
+      <div class="p-2" id="team-des">
+        <img id="avatar" src="static/DSC_2164.jpg" alt="avatar">
+        <h1 id="team-name" style="font-weight: bold">Peter Chege</h1>
+        <h4 id="team-role" style="font-weight: bold"> Public Relations & Education</h4>
+      </div>
+
+      <!-- <div class="p-2" id="team-des">
     <img id="avatar"  src="static/eunice.jpg" alt="avatar">
     <h1 id="team-name"  style="font-weight: bold;">Eunice Atieno</h1>
     <h4 id="team-role"style="font-weight: bold">Technology Lead</h4>
   </div> -->
 
-  <div class="p-2" id="team-des">
-    <img id="avatar"   src="static/DSC_2141.jpg" alt="avatar">
-    <h1 id="team-name"style="font-weight: bold">Jepchirchir Sawe</h1>
-    <h4 id="team-role"style="font-weight: bold">Research Assistant</h4>
+      <div class="p-2" id="team-des">
+        <img id="avatar" src="static/DSC_2141.jpg" alt="avatar">
+        <h1 id="team-name" style="font-weight: bold">Jepchirchir Sawe</h1>
+        <h4 id="team-role" style="font-weight: bold">Research Assistant</h4>
+      </div>
+      <div class="p-2" id="team-des">
+        <img id="avatar" src="static/DSC_2148.jpg" alt="avatar">
+        <h1 id="team-name" style="font-weight: bold">Levi</h1>
+        <h4 id="team-role" style="font-weight: bold">Branding and Marketing Lead</h4>
+      </div>
+    </div>
   </div>
-  <div class="p-2" id="team-des">
-    <img id="avatar"   src="static/DSC_2148.jpg" alt="avatar">
-    <h1 id="team-name"style="font-weight: bold">Levi</h1>
-    <h4 id="team-role"style="font-weight: bold">Branding and Marketing Lead</h4>
+  <div style="background-color: #1E443E;">
+    <h1 style="padding: 20px;"></h1>
   </div>
-  </div>
-</div>
-<div style="background-color: #1E443E;">
-  <h1 style="padding: 20px;"></h1>
-</div>
-<!-- <h1 id="cert-name"><br>Our Certifications</h1>
+  <!-- <h1 id="cert-name"><br>Our Certifications</h1>
 <div id="cert">
     <p id="food-word"></p>
 </div> -->
-<!-- <h1 id="cert-name"><br>Our Partners</h1>
+  <!-- <h1 id="cert-name"><br>Our Partners</h1>
 <div id="partner">
     <p id="partner-word"></p>
 </div> -->
 
- 
+
 
 </div>
 
 <style>
-  .eunice-img{
+  .eunice-img {
     height: 64%;
   }
-  .sawe-img{
+
+  .sawe-img {
     height: 65%;
   }
-  #cert-name{
+
+  #cert-name {
     background-color: white;
-margin-bottom: -1%;
+    margin-bottom: -1%;
     text-align: center;
     color: #1E443E;
     font-weight: bold;
   }
-  #partner{
-         background-image: url("static/partners.png"); 
-         background-repeat: no-repeat;
-         background-size: cover;
-         
-         
-    } 
-   #cert{
-         background-image: url("static/certs.png"); 
-         background-repeat: no-repeat;
-         background-size: cover;
-         
-    } 
-    #food-word{
-      padding: 210px;
-      text-align: center;
-    } 
-    #partner-word{
-      padding: 160px;
-      text-align: center;
-    } 
 
-#main-team-div{
+  #partner {
+    background-image: url("static/partners.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  }
+
+  #cert {
+    background-image: url("static/certs.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  #food-word {
+    padding: 210px;
+    text-align: center;
+  }
+
+  #partner-word {
+    padding: 160px;
+    text-align: center;
+  }
+
+  #main-team-div {
     margin-left: 7%;
     margin-right: 7%;
-}    
+  }
 
-#about-div{
+  #about-div {
     background-color: #effaf0;
-    
 
-}    
-#card-deck{
+
+  }
+
+  #card-deck {
     width: 80%;
     margin-left: 10%;
     padding: 20px;
     margin-bottom: 2%;
     width: 90%;
     margin-left: 5%;
-    
 
-}
-#card-title{
+
+  }
+
+  #card-title {
     margin: 50% 0 0 5%;
     font-size: 20px;
 
-}
-#titl{
-  font-weight: bold;
-}
+  }
 
-#silk-image{
-  
-}
-#food-image{
-   
-}
-#leather-image{
-  
-}
-#fwd-word{
+  #titl {
+    font-weight: bold;
+  }
+
+  #silk-image {}
+
+  #food-image {}
+
+  #leather-image {}
+
+  #fwd-word {
     margin-top: 1%;
     text-align: center;
     font-weight: bold;
-}
-#fwd-pg{
+  }
+
+  #fwd-pg {
     text-align: center;
     font-size: 20px;
     padding: 20px;
     font-weight: bold;
-}
-#chain1div{
+  }
+
+  #chain1div {
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
@@ -756,376 +965,429 @@ margin-bottom: -1%;
     text-align: center;
     font-size: 20px;
 
-}
-#second-about-div{
+  }
+
+  #second-about-div {
     background-color: #fdffff;
     padding: 70px;
     color: #1E443E;
-}
+  }
 
-#prod-div{
+  #prod-div {
     background-color: #1E443E;
     padding: 30px;
     margin-left: 20%;
 
-}
-#read-more{
+  }
+
+  #read-more {
     padding: 10px;
     background-color: #F0F1E4;
-     color: #60BD66;
-     text-decoration: none;
-     border-radius: 5px;
-}
+    color: #60BD66;
+    text-decoration: none;
+    border-radius: 5px;
+  }
 
-#card-title{
+  #card-title {
     margin: 50% 0 0 5%;
     font-size: 30px;
 
 
-}
-#card1{
+  }
+
+  #card1 {
     background-color: #1E443E;
-    color:white;
+    color: white;
     padding: 5%;
     background-image: url("static/LEATHER.jpeg");
     border-radius: 60px;
     font-size: 20px;
     font-weight: bold;
-    
 
-  
-}
-#card2{
+
+
+  }
+
+  #card2 {
     background-color: #1E443E;
-    color:white;
+    color: white;
     padding: 5%;
     background-image: url("static/silk.jpeg");
     border-radius: 60px;
     font-size: 20px;
     font-weight: bold;
-    
-}
-#card3{
+
+  }
+
+  #card3 {
     background-color: #1E443E;
-    color:white;
+    color: white;
     padding: 5%;
     background-image: url("static/food.jpeg");
     border-radius: 60px;
     font-size: 20px;
     font-weight: bold;
-    
-}
-#arrow{
+
+  }
+
+  #arrow {
     width: 10%;
     margin-top: -1%;
-}
+  }
 
 
-.footer-basic ul a:hover {
-  opacity:1;
-}
+  .footer-basic ul a:hover {
+    opacity: 1;
+  }
 
-.footer-basic .social {
-  text-align:center;
-  padding-bottom:25px;
-}
+  .footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+  }
 
-.footer-basic .social > a {
-  font-size:24px;
-  width:40px;
-  height:40px;
-  line-height:40px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  border:1px solid #ccc;
-  margin:0 8px;
-  color:inherit;
-  opacity:0.75;
-}
+  .footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+  }
 
-.footer-basic .social > a:hover {
-  opacity:0.9;
-}
+  .footer-basic .social>a:hover {
+    opacity: 0.9;
+  }
 
-.footer-basic .copyright {
-  text-align:center;
-  font-size:13px;
-  color:#aaa;
-  margin-bottom:0;
-}
-#contact-us{
+  .footer-basic .copyright {
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+  }
+
+  #contact-us {
     background-color: #1f3b22;
     color: rgb(255, 247, 247);
     text-align: center;
-}
-#footer-basic{
+  }
+
+  #footer-basic {
     width: 100%;
     padding: 50px;
-}
-#team-name{
-  font-size: 30px;
-  margin-top: 2%;
-}
-#team-role{
-  font-size: 20px;
-}
-
-
-#team-word{
-  text-align: center;
-  padding:20px 0 0 0;
-  font-weight: bold;
-  color:#1E443E;
-}
-
-#team-des{
-  color: #1E443E;
-  width: 40%;
-}
-#avatar{
-  width: 70%;
-}
-
-#con-text{
-  font-weight: bold;
-}
-#email{
-  font-size: 20px;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-#phone{
-  font-size: 20px;
-}
-
-
-  #nav-text{
-  color: #1E443E;
-  padding:30px 100px 25px 40px;
-  font-size: 20px;
-  font-weight: bold;
-  
   }
-  #nav-text:hover {
-  color: #92278F;
+
+  #team-name {
+    font-size: 30px;
+    margin-top: 2%;
   }
-  #logo{
-  margin: 0 5% 0 10%;
-  width: 15%;
 
-  }
-  
-  #read-more{
-      padding: 20px;
-      background-color: #60BD66;
-      color: #F0F1E4;
-      text-decoration: none;
-      border-radius: 7px;
-      font-size: 20px;
-  } 
-#team-div{
-  display: flex;
-  margin-left: 5%;
-} 
-#our-prod{
-  text-align: center;padding: 10px;font-size: 40px;font-weight: bold;
-
-}
-
-
-
-
-
-
-
-
-  
-
-/* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
-@media only screen and (max-width: 767px) {
-  #nav-text{
-  color: #1E443E;
-  padding:15px 50px 17px 15px;
-  font-size: 15px;
-  font-weight: bold;
-  
-  }  
-  #hr{
-  }
-  #titl{
-  font-weight: bold;
-  font-size: 20px;
-}
-  #our-prod{
-  text-align: center;padding: 10px;font-size: 20px;font-weight: bold;
-
-}
-  #cert-name{
-    background-color: white;
-    text-align: center;
-    color: #1E443E;
-    font-weight: bold;
+  #team-role {
     font-size: 20px;
   }
-  #food-word{
-      padding: 40px 0 40px 0;
-    } 
-    #partner-word{
-      padding: 35px 0 35px 0;
-    } 
-  #card-title{
-    margin: 250% 0 0 2%;
-    font-size: 10px;
 
-}
-#fwd-word{
-  font-size: 20px;
-  font-weight: bold;
 
-}
-#fwd-pg{
+  #team-word {
     text-align: center;
-    font-size: 15px;
-    padding: 20px;
-}
-#card-deck{
+    padding: 20px 0 0 0;
+    font-weight: bold;
+    color: #1E443E;
+  }
+
+  #team-des {
+    color: #1E443E;
     width: 40%;
+  }
+
+  #avatar {
+    width: 70%;
+  }
+
+  #con-text {
+    font-weight: bold;
+  }
+
+  #email {
+    font-size: 20px;
+    margin-right: 10%;
     margin-left: 10%;
-    padding: 20px;
-    margin-bottom: 2%;
-    width: 90%;
-    margin-left: 5%;
-    
+  }
 
-}
-#card1{
-    background-color: #1E443E;
-    color:white;
-    padding: 5%;
-    background-image: url("static/LEATHER.jpeg");
-    border-radius: 30px;
-    font-size: 10px;
-    font-weight: bold;
-
-  
-}
-#card2{
-    background-color: #1E443E;
-    color:white;
-    padding: 5%;
-    background-image: url("static/silk.jpeg");
-    border-radius: 30px;
-    font-size: 10px;
-    font-weight: bold;
-    
-}
-#card3{
-    background-color: #1E443E;
-    color:white;
-    padding: 5%;
-    background-image: url("static/food.jpeg");
-    border-radius: 30px;
-    font-size: 10px;
-    font-weight: bold;
-    
-}
-#chain1div{
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 5px;
-
-}
-#email{
-  padding: 4px;
-  font-size: 15px;
-  margin-right: 0.5%;
-
-}
-#phone{
-  padding: 7px;
-  margin-top: 5%;
-  font-size: 15px;
-  margin-bottom: -7%;
-}
-#footer-basic{
-    width: 100%;
-} 
-#team-div{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
-} 
-#team-word{
-  margin-top: -5%;
-  font-size: 20px;
-  font-weight: bold;
-}
-#team-des{
-  font-size: 10px;
-  width: 50%;
-}
-#team-name{
-  padding-top: 2px;
-  font-size: 17px;
-  font-weight: bold;
-  text-align: center;
-}
-#team-role{
-  font-size: 13px;
-  text-align: center;
-
-}
-#team-pic{
-  width: 70%;
-  
-}
-#avatar{
-  width: 80%;
-  margin-left: 15%;
-}
-  
-#chain1div{
-  display: none;
-} 
-#second-about-div{
-  padding: 1px;
-}
-#con-text{
-  font-size: 20px;
-}
-#logo{
-  margin: 0 10% 0 3%;
-  width: 25%;
+  #phone {
+    font-size: 20px;
   }
 
 
-}
-/* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+  #nav-text {
+    color: #1E443E;
+    padding: 30px 100px 25px 40px;
+    font-size: 20px;
+    font-weight: bold;
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    #mission-img{
-         background-image: url("static/cact.jpeg"); 
-         
+  }
+
+  #nav-text:hover {
+    color: #92278F;
+  }
+
+  #logo {
+    margin: 0 5% 0 10%;
+    width: 15%;
+
+  }
+
+  #read-more {
+    padding: 20px;
+    background-color: #60BD66;
+    color: #F0F1E4;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 20px;
+  }
+
+  #team-div {
+    display: flex;
+    margin-left: 5%;
+  }
+
+  #our-prod {
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+
+  }
+
+
+
+
+
+
+
+
+
+
+  /* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+  @media only screen and (max-width: 767px) {
+    #nav-text {
+      color: #1E443E;
+      padding: 15px 50px 17px 15px;
+      font-size: 15px;
+      font-weight: bold;
+
+    }
+
+    #hr {}
+
+    #titl {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    #our-prod {
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+
+    }
+
+    #cert-name {
+      background-color: white;
+      text-align: center;
+      color: #1E443E;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    #food-word {
+      padding: 40px 0 40px 0;
+    }
+
+    #partner-word {
+      padding: 35px 0 35px 0;
+    }
+
+    #card-title {
+      margin: 250% 0 0 2%;
+      font-size: 10px;
+
+    }
+
+    #fwd-word {
+      font-size: 20px;
+      font-weight: bold;
+
+    }
+
+    #fwd-pg {
+      text-align: center;
+      font-size: 15px;
+      padding: 20px;
+    }
+
+    #card-deck {
+      width: 40%;
+      margin-left: 10%;
+      padding: 20px;
+      margin-bottom: 2%;
+      width: 90%;
+      margin-left: 5%;
+
+
+    }
+
+    #card1 {
+      background-color: #1E443E;
+      color: white;
+      padding: 5%;
+      background-image: url("static/LEATHER.jpeg");
+      border-radius: 30px;
+      font-size: 10px;
+      font-weight: bold;
+
+
+    }
+
+    #card2 {
+      background-color: #1E443E;
+      color: white;
+      padding: 5%;
+      background-image: url("static/silk.jpeg");
+      border-radius: 30px;
+      font-size: 10px;
+      font-weight: bold;
+
+    }
+
+    #card3 {
+      background-color: #1E443E;
+      color: white;
+      padding: 5%;
+      background-image: url("static/food.jpeg");
+      border-radius: 30px;
+      font-size: 10px;
+      font-weight: bold;
+
+    }
+
+    #chain1div {
+      margin-left: 5%;
+      margin-right: 5%;
+      padding: 5px;
+
+    }
+
+    #email {
+      padding: 4px;
+      font-size: 15px;
+      margin-right: 0.5%;
+
+    }
+
+    #phone {
+      padding: 7px;
+      margin-top: 5%;
+      font-size: 15px;
+      margin-bottom: -7%;
+    }
+
+    #footer-basic {
+      width: 100%;
+    }
+
+    #team-div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0;
+    }
+
+    #team-word {
+      margin-top: -5%;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    #team-des {
+      font-size: 10px;
+      width: 50%;
+    }
+
+    #team-name {
+      padding-top: 2px;
+      font-size: 17px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #team-role {
+      font-size: 13px;
+      text-align: center;
+
+    }
+
+    #team-pic {
+      width: 70%;
+
+    }
+
+    #avatar {
+      width: 80%;
+      margin-left: 15%;
+    }
+
+    #chain1div {
+      display: none;
+    }
+
+    #second-about-div {
+      padding: 1px;
+    }
+
+    #con-text {
+      font-size: 20px;
+    }
+
+    #logo {
+      margin: 0 10% 0 3%;
+      width: 25%;
     }
 
 
-}
+  }
 
-  </style>
-  
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
-  </body>
-  </html>
+  /* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #mission-img {
+      background-image: url("static/cact.jpeg");
+
+    }
+
+
+  }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
 
 <!-- our shop -->
 <div id="shop-div">
   <h1 id="our-shop">Our Shop</h1>
-   
-  <div  id="card-deck-shop-leather">
+
+  <div id="card-deck-shop-leather">
     <div class="card" id="card-shop">
       <img class="card-img-top" src="static/DSC_2382.png" alt="Card image cap" height="60%">
       <div class="card-body">
@@ -1134,8 +1396,9 @@ margin-bottom: -1%;
       </div>
       <div class="card-footer">
         <div style="display: flex;">
-          <p  id="price">KSH 2500</p>
-          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+          <p id="price">KSH 2500</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal"
+            data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
         </div>
       </div>
     </div>
@@ -1147,8 +1410,9 @@ margin-bottom: -1%;
       </div>
       <div class="card-footer">
         <div style="display: flex;">
-          <p  id="price">KSH 2500</p>
-          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+          <p id="price">KSH 2500</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal"
+            data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
         </div>
       </div>
     </div>
@@ -1161,8 +1425,9 @@ margin-bottom: -1%;
       </div>
       <div class="card-footer">
         <div style="display: flex;">
-          <p  id="price">KSH 1000</p>
-          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+          <p id="price">KSH 1000</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal"
+            data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
         </div>
       </div>
     </div>
@@ -1175,34 +1440,43 @@ margin-bottom: -1%;
       </div>
       <div class="card-footer">
         <div style="display: flex;">
-          <p  id="price">KSH 2500</p>
-          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal" data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
+          <p id="price">KSH 2500</p>
+          <a id="icon" icon="ion:heart-circle-outline" id="icon" type="button" data-toggle="modal"
+            data-target="#exampleModal" href=""><iconify-icon icon="ion:heart-circle-outline"></iconify-icon></a>
         </div>
       </div>
     </div>
-    
-  </div> 
+
+  </div>
+
+
+  <!-- contact us -->
   <div id="contact-us">
     <div class="footer-basic" id="footer-basic">
       <h3 id="con-text">Contact Us </h3><br>
       <p id="email">duniabora@gmail.com</p>
       <p id="phone">+254748383590</p><br><br>
-        <footer>
-          
-            <div class="social"><a href="https://www.instagram.com/dunia_bora/"><i class="icon ion-social-instagram"></i></a><a href="https://www.linkedin.com/company/dunia-bora/?originalSubdomain=ke"><i class="icon ion-social-linkedin"></i></a><a href="https://twitter.com/bora_dunia?lang=en"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-            
-            <p class="copyright">Dunia Bora © 2024</p>
-        </footer>
+      <footer>
+
+        <div class="social"><a href="https://www.instagram.com/dunia_bora/"><i
+              class="icon ion-social-instagram"></i></a><a
+            href="https://www.linkedin.com/company/dunia-bora/?originalSubdomain=ke"><i
+              class="icon ion-social-linkedin"></i></a><a href="https://twitter.com/bora_dunia?lang=en"><i
+              class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+
+        <p class="copyright">Dunia Bora © 2024</p>
+      </footer>
     </div>
-</div> 
+  </div>
 
 
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- buy modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header" id="modal-header">
-          <h5 > Thank You for showing interest in our product.</h5>
+          <h5> Thank You for showing interest in our product.</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -1211,9 +1485,9 @@ margin-bottom: -1%;
           Share your contact and our sales person will reach out in a few minutes.
           <form id="myForm">
             <input placeholder="Product name" name="ProductCode" />
-            <br/>
+            <br />
             <input placeholder="Phone number" name="PhoneNumber" />
-            <br/>
+            <br />
           </form>
           <button onclick='SubForm()' id="form-button">Submit</button>
         </div>
@@ -1223,292 +1497,321 @@ margin-bottom: -1%;
       </div>
     </div>
   </div>
-
-
-
-
-
 </div>
 
 
 
 <style>
-#our-shop{
-  text-align: center;
-  padding: 40px 0 20px 0;
-  font-weight: bold;
-}  
+  #our-shop {
+    text-align: center;
+    padding: 40px 0 20px 0;
+    font-weight: bold;
+  }
 
-#name{
-font-size:80px ;
-color: white;
-font-weight: bold;
-}
+  #name {
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+  }
 
-#pg-home{
-font-size: 60px;
-color: white;
-font-weight: bold;
-}
+  #pg-home {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+  }
 
-#home-div-bg{
+  #home-div-bg {
+    background-image: linear-gradient(rgba(3, 3, 3, 0.5), rgba(0, 0, 0, 0.5)), url('static/back1.jpeg');
+    width: 100%;
+    align-items: center;
+    height: 50vh;
+    background-size: cover;
+  }
+
+  #home-img {
+    width: 90%;
+    height: 90%;
+  }
+
+  #home-word-div {
+    text-align: center;
+  }
+
+  #home-img-div {
+    margin: 0 0 0% 10%;
+
+  }
+
+  #nav-text {
+    color: #1E443E;
+    padding: 30px 100px 25px 30px;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  #nav-text:hover {
+    color: #92278F;
+  }
+
+  #logo {
+    margin: 0 10% 0 10%;
+    width: 15%;
+
+  }
+
+  #read-more {
+    padding: 15px;
+    color: white;
+    background-color: #56B54B;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #card-deck-shop-leather {
+    margin: 0 9% 1% 10%;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 0 20px 0;
+
+  }
+
+  #card-shop {
+    border-radius: 20px;
+    padding: 10px;
+    width: 80%;
+    margin-right: 20px;
+  }
+
+  #item {
+    font-weight: bold;
+  }
+
+
+  #icon {
+    font-size: 30px;
+    color: #e15a1b;
+
+
+  }
+
+  #price {
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 50%;
+    margin-top: 3%;
+    color: black;
+  }
+
+  #modal-body {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #f0e8d8;
+  }
+
+  #modal-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  #myForm {
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 25px;
+  }
+
+  input {
+    margin-top: 3%;
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+
+  }
+
+  #form-button {
+    padding: 8px;
+    margin-top: 2%;
+    background-color: #1E443E;
+    color: #F0F1E4;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 15px;
+    border: 0px;
+    width: 30%;
+
+  }
+
+  #header-hr {
+    width: 80%;
+    border: 1px solid #1d1f01;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+  @media only screen and (max-width: 767px) {
+
+    #card-deck-shop-leather {
+      margin: 0 9% 1% 20%;
+      justify-content: space-between;
+      padding: 0 0 20px 0;
+      display: list-item;
+
+    }
+
+    #br1 {
+      display: none;
+
+    }
+
+    #br2 {
+      display: none;
+
+    }
+
+    #br {
+      display: none;
+
+    }
+
+    #home-word-div {
+
+      text-align: center;
+
+    }
+
+    #our-shop {
+      font-size: 20px;
+      color: #1E443E;
+      margin-top: -3%;
+      font-weight: bold;
+    }
+
+    #logo {
+      margin: 0 10% 0 3%;
+      width: 25%;
+    }
+
+    #home-div-bg {
       background-image: linear-gradient(rgba(3, 3, 3, 0.5), rgba(0, 0, 0, 0.5)), url('static/back1.jpeg');
-      width: 100%;
+      width: 80%;
+      margin-left: 10%;
       align-items: center;
-      height: 50vh;
+      height: 18vh;
       background-size: cover;
     }
 
-#home-img{
-width: 90%;
-height: 90%;
-}
-
-#home-word-div{
-text-align: center;
-}
-
-#home-img-div{
-margin: 0 0 0% 10%;
-
-}
-
-  #nav-text{
-  color: #1E443E;
-  padding:30px 100px 25px 30px;
-  font-size: 20px;
-  font-weight: bold;
-  
-  }
-  #nav-text:hover {
-  color: #92278F;
-  }
-  #logo{
-  margin: 0 10% 0 10%;
-  width: 15%;
-
+    #home-img-div {
+      margin: 15% 0 1% 0;
     }
-  
-  #read-more{
-      padding: 15px;
-      color: white;
-      background-color: #56B54B;
-      text-decoration: none;
-      border-radius: 7px;
+
+    #home-img {
+      margin-right: 2%;
+      width: 100%;
+      height: 80%;
+    }
+
+    #name {
       font-size: 20px;
       font-weight: bold;
-}  
-
-#card-deck-shop-leather{
-  margin: 0 9% 1% 10%;
-  justify-content: space-between;
-  display: flex;
-  padding:0 0 20px 0;
- 
-} 
-#card-shop{
-  border-radius: 20px;
-  padding: 10px;
-  width: 80%;
-  margin-right: 20px;
-}
-#item{
-  font-weight: bold;
-}
-
-
-#icon{
-  font-size: 30px;
-  color: #e15a1b;
-  
-
-}
-#price{
-  font-weight: bold;
-  font-size: 15px;
-  margin-right: 50%;
-  margin-top: 3%;
-  color: black;
-}
-#modal-body{
-  text-align: center;
-  font-weight: bold;
-  font-size: 15px;
-  background-color: #f0e8d8;
-}
-#modal-header{
-  text-align: center;
-  font-weight: bold;
-  font-size: 15px;
-}
-#myForm{
-  padding: 5px;
-  font-size: 15px;
-  border-radius:25px ;
-}
-input{
-  margin-top: 3%;
-  padding: 10px;
-  border: 0px;
-  border-radius:10px ;
-
-}
-#form-button{
-  padding: 8px;
-  margin-top: 2%;
-  background-color: #1E443E;
-  color: #F0F1E4;
-  text-decoration: none;
-  border-radius: 7px;
-  font-size: 15px;
-  border: 0px;
-  width: 30%;
-
-}
-#header-hr{
-  width: 80%;
-  border: 1px solid #1d1f01;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* >>>>>>>>>>>>>>>>>>>>>>>.for phones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
-  @media only screen and (max-width: 767px) {
-
- 
-#br1{
-  display: none;
-  
-}
-#br2{
-  display: none;
-  
-}
-#br{
-  display: none;
-  
-}
-#home-word-div{
-
-text-align: center;
-
-}
-#our-shop{
-  font-size: 20px;
-  color: #1E443E;
-  margin-top: -3%;
-}
-#logo{
-  margin: 0 10% 0 3%;
-  width: 25%;
+      color: #FFFFFF;
     }
-#home-div-bg{
-  background-image: linear-gradient(rgba(3, 3, 3, 0.5), rgba(0, 0, 0, 0.5)), url('static/back1.jpeg');
-  width: 80%;
-  margin-left: 10%;
-  align-items: center;
-  height: 18vh;
-  background-size: cover;
-}
 
-#home-img-div{
-margin: 15% 0 1% 0;
-}    
+    #pg-home {
+      font-size: 15px;
+      margin-bottom: -2%;
+      color: #FFFFFF;
+    }
 
-#home-img{
-  margin-right: 2%;
-width: 100%;
-height: 80%;
-}
-  #name{
-font-size:20px ;
-font-weight: bold;
-color: #FFFFFF;
-}
+    #read-more {
+      padding: 10px;
+      background-color: #419247;
+      color: #F0F1E4;
+      text-decoration: none;
+      border-radius: 7px;
+      font-size: 10px;
+    }
 
-#pg-home{
-font-size: 15px;
-margin-bottom: -2%;
-color: #FFFFFF;
-}
-#read-more{
-  padding: 10px;
-  background-color: #419247;
-  color: #F0F1E4;
-  text-decoration: none;
-  border-radius: 7px;
-  font-size: 10px;
-  }  
-  #nav-text{
-  color: #1E443E;
-  padding:15px 50px 17px 15px;
-  font-size: 15px;
-  font-weight: bold;
-  
-  } 
-#cat-food{
-border-radius: 10px;
-border: 1px solid #412d03;
-color:#412d03 ;
+    #nav-text {
+      color: #1E443E;
+      padding: 15px 50px 17px 15px;
+      font-size: 15px;
+      font-weight: bold;
+
+    }
+
+    #cat-food {
+      border-radius: 10px;
+      border: 1px solid #412d03;
+      color: #412d03;
 
 
-}
-#card-shop{
-  width: calc(50% - 4px);
-  border-radius: 10px;
-  font-size: 12px;
-  padding: 5px;
-  margin-right: 0px;
-  margin-bottom: 5px;
-}
-#item{
-  font-size: 15px;
-}
+    }
 
-#icon{
-  font-size: 20px;
-  color: #e15a1b;
-  
+    #card-shop {
+      width: calc(50% - 4px);
+      border-radius: 10px;
+      font-size: 12px;
+      padding: 5px;
+      margin-right: 0px;
+      margin-bottom: 50px;
+    }
 
-}
-#price{
-  font-weight: bold;
-  font-size: 10px;
-  margin-top: 3%;
-  color: black;
-  margin-right: 30%;
-  margin-top: 5%;
-}
-#header-hr{
-  width: 87%;
-  border: 1px solid #393c05;
-}
-#exampleModal{
-  width: 54%;
-  align-items: center;
-  margin-left: 2%;
-}
+    #item {
+      font-size: 15px;
+    }
 
+    #icon {
+      font-size: 20px;
+      color: #e15a1b;
+
+
+    }
+
+    #price {
+      font-weight: bold;
+      font-size: 10px;
+      margin-top: 3%;
+      color: black;
+      margin-right: 30%;
+      margin-top: 5%;
+    }
+
+    #header-hr {
+      width: 87%;
+      border: 1px solid #393c05;
+    }
+
+    #exampleModal {
+      width: 54%;
+      align-items: center;
+      margin-left: 2%;
+    }
 </style>
 
 
-  
-<script
-src="https://code.jquery.com/jquery-3.4.1.js"
-integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-crossorigin="anonymous"></script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
-  </body>
-  </html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
